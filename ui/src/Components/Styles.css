@@ -1,0 +1,92 @@
+#navLink{
+    margin: auto 5px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 4px;
+    color: white;
+    padding: .2rem 1rem;
+    border-radius: 5px;
+}
+
+.btn-link{
+    color: white !important;
+    margin: auto 5px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 4px;
+    padding: .2rem 1rem;
+    border-radius: 5px;
+    background-color: rgb(255, 0, 0);
+}
+
+#navLink:hover{
+    transition: .3s all ease;
+    background-color: white;
+    color: black;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.navbar{
+    background-color: green !important;
+    padding-left: 1rem;
+}
+
+.navbar-brand{
+    color: white !important;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.container{
+    margin-top: 2rem;
+}
+#form-cont{
+    max-width: 560px;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+    border-radius: 10px;
+    box-shadow: 1px 4px 20px rgb(0, 133, 11);
+}
+
+@media screen and (max-width: 560px) {
+    #form-cont{
+        margin: 4rem auto;
+        padding: 1rem .5rem;
+        width: 320px;
+    }
+    input{
+        width: 300px !important;
+    }
+}
+
+#form-cont h1{
+    font-weight: 900;
+    margin-bottom: 2rem;
+    color: green;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid green;
+}
+
+.form-label{
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.homecont{
+    margin-top: 0;
+}
+
+#todoRow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fdb-block{
+    height: 94vh;
+}
