@@ -26,5 +26,14 @@ export default {
     });
   },
 
+  deleteTodos: (id) => {
+    return fetch("/users/todo", {
+      method: "delete",
+      body: JSON.stringify(id),
+      headers: {
+        "Content-Type": "application/json",
+      }
+    })
+  },
 
 };

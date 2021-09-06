@@ -10,7 +10,7 @@ app.use(cookieParser());
 // body parser inbuilt in express means we want to use json part of body parser.
 app.use(express.json())
 
-mongoose.connect('mongodb+srv://username:password@sl.fnwbh.mongodb.net/clustername?retryWrites=true&w=majority',()=>{
+mongoose.connect('mongodb+srv://test:test@sl.fnwbh.mongodb.net/SL?retryWrites=true&w=majority',()=>{
     console.log('Successfully connected to Database')
 });
 

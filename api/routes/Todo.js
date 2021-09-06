@@ -59,4 +59,20 @@ todoRouter.get("/todos", passport.authenticate("jwt", { session: false }), (req,
 });
 
 
+
+todoRouter.delete(
+    "/todo",
+    passport.authenticate("jwt", { session: false }),
+    (req, res) => {
+        Todo.findByIdAndDelete({ _id: req.body._id },(err) =>{
+            if (err) {
+                res.status(500).json({
+                    success: false,
+                    message: { msgBody: "Error has occured in displaying Todos", msgError: true },
+                });
+            }
+        })
+    }
+);
+
 module.exports = todoRouter;
