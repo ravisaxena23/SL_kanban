@@ -6,7 +6,6 @@
 /ui/node_modules
 /ui/.pnp
 /ui/.pnp.js
-
 # testing
 /ui/coverage
 
